@@ -21,6 +21,10 @@ const App = () => {
     }).then((res) => res.json())
       .then((data) => {
         console.log(data)
+        if(data.insertedId){
+          alert('user added succesfully')
+          form.reset()
+        }
       })
   }
 
